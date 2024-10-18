@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('C:\Users\Agus\OneDrive\Documents\images (1).jpeg') no-repeat center center/cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #ffcc00;
+            font-size: 2.5em;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 4px solid #ffcc00;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: #ffcc00;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #ffcc00;
+            margin-top: 5px;
+        }
+
+        .hobby-container, .skill-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .hobby, .skill {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .hobby:hover, .skill:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .project-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+
+        .year {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agus Setiawan</h1>
+            <p>Mahasiswa Informatika | Pengembang Aplikasi | Desainer UI/UX</p>
+        </header>
+
+        <div class="profile-section">
+            <img src="C:/Users/Agus/Downloads/WhatsApp Image 2024-10-07 at 19.37.46_89e09a93.jpg" alt="Foto Profil" class="profile-img">
+            <p>Halo! Saya seorang mahasiswa Program Studi Informatika di Universitas Negeri Surabaya, berfokus pada pengembangan aplikasi dan desain UI/UX.</p>
+        </div>
+
+        <section class="hobbies">
+            <h2>Hobi Saya</h2>
+            <div class="hobby-container">
+                <div class="hobby">📚 Membaca buku teknologi</div>
+                <div class="hobby">✍️ Menulis blog</div>
+                <div class="hobby">🏃‍♂️ Olahraga</div>
+                <div class="hobby">🍳 Memasak</div>
+                <div class="hobby">🌍 Menjelajahi alam</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Proyek</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Aplikasi Manajemen Tugas</h3>
+                    <p>Aplikasi untuk mengelola tugas harian.</p>
+                    <span class="year">2023</span>
+                </div>
+                <div class="project-card">
+                    <h3>Website Portofolio Pribadi</h3>
+                    <p>Situs web untuk menampilkan karya saya.</p>
+                    <span class="year">2023</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Keterampilan</h2>
+            <div class="skill-container">
+                <div class="skill">📱 Aplikasi Mobile</div>
+                <div class="skill">🎨 Desain UI/UX</div>
+                <div class="skill">💻 Java, Python, JavaScript</div>
+                <div class="skill">🗄️ MySQL, MongoDB</div>
+                <div class="skill">⚙️ React, Flutter</div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Agus Setiawan. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
